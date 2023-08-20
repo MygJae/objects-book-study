@@ -1,0 +1,76 @@
+$employees = ["직원A", "직원B", "직원C", "아르바이트D", "아르바이트E", "아르바이트F"]
+$basePays = [400, 300, 250, 1, 1, 1.5]
+$hourlys = [false, false, false, true, true, true]
+$timeCards = [0, 0, 0, 120, 120, 120]
+
+# 메인함수 수정
+def main(operation, args={})
+    case(operation)
+    when :pay then calculatePay(args[:name])
+    when :basePays then sumOfBasePays()
+    end
+end
+
+# 0.직원의 급여를 계산 -> 정규직 알바 함수 호출
+def calculatePay(name)
+    # 1.사용자로부터 소득세율을 입력 받음
+    taxRate = getTaxRate()
+    # 2.직원의 급여를 계산
+    if (hourly?(name)) then
+        pay = calculateHourlyPayFor(name, taxRate)
+    else
+        pay = calculatePayFor(name, taxRate)
+    end
+    # 3.양식에 맞게 결과를 출력
+    puts(describeResult(name, pay))
+end
+
+# 1.사용자로부터 소득세율을 입력 받음
+def getTaxRate()
+    # 1-1."세율을 입력 : " 화면에 출력
+    print("세율을 입력하세요: ")
+    # 1-2.키보드를 통해 세율을 입력 받음
+    return gets().chomp().to_f()
+end
+
+# 2.직원의 급여를 계산
+def calculatePayFor(name, taxRate)
+    #2.1전역 변수에 저장된 직원의 기본급 정보를 얻음
+    index = $employees.index(name)
+    basePay = $basePays[index]
+    #2.2급여를 계산
+    return basePay - (basePay * taxRate)
+end
+
+# 3.양식에 맞게 결과를 출력
+def describeResult(name, pay)
+    # 3-1."이름 : {직원명}, 급여 : {계산된 금액} " 형식에 따라 출력 문자열을 생성
+    return "이름 : #{name}, 급여 : #{pay}"
+end
+
+# 기본급의 총합을 구하는 기능 추가 -> 시급 총합에서 제외
+def sumOfBasePays()
+    result = 0
+    for name in $employees
+        if (not hourly?(name)) then
+            result += $basePays[$employees.index(name)]
+        end
+    end
+    puts(result)
+end
+
+# 알바 급여 계산
+def calculateHourlyPayFor(name, taxRate)
+    index = $employees.index(name)
+    basePay = $basePays[index] * $timeCards[index]
+    return basePay - (basePay * taxRate)
+end
+
+# 정규직원, 알바 판단
+def hourly?(name)
+    return $hourlys[$employees.index(name)]
+end
+
+main(:basePays)
+main(:pay, name:"아르바이트A")
+
