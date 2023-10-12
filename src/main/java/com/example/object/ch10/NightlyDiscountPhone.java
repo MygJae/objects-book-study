@@ -1,6 +1,6 @@
-package org.eternity.billing.step08;
+package com.example.object.ch10;
 
-import org.eternity.money.Money;
+import com.example.object.ch10.Money;
 
 import java.time.Duration;
 

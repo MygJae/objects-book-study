@@ -1,14 +1,14 @@
-package org.eternity.movie.step03;
+package com.example.object.ch9;
 
-import org.eternity.money.Money;
-
+import com.example.object.ch9.Money;
+import com.example.object.ch9.Screening;
 public class Reservation {
     private Customer customer;
-    private org.eternity.movie.step03.Screening Screening;
+    private Screening Screening;
     private Money fee;
     private int audienceCount;
 
-    public Reservation(Customer customer, org.eternity.movie.step03.Screening Screening, Money fee, int audienceCount) {
+    public Reservation(Customer customer, Screening Screening, Money fee, int audienceCount) {
         this.customer = customer;
         this.Screening = Screening;
         this.fee = fee;

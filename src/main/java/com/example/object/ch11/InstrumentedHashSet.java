@@ -1,4 +1,4 @@
-package org.eternity.instrumented;
+package com.example.object.ch11;
 
 import java.util.Collection;
 import java.util.Iterator;

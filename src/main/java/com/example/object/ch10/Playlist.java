@@ -1,4 +1,4 @@
-package org.eternity.playlist.step02;
+package com.example.object.ch10;
 
 import java.util.ArrayList;
 import java.util.HashMap;

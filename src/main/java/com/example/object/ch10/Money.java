@@ -1,4 +1,4 @@
-package org.eternity.money;
+package com.example.object.ch10;
 
 import java.math.BigDecimal;
 import java.util.Objects;

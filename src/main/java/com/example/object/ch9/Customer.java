@@ -1,4 +1,4 @@
-package org.eternity.movie.step03;
+package com.example.object.ch9;
 
 public class Customer {
 	private String name;

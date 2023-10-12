@@ -1,4 +1,4 @@
-package org.eternity.properties;
+package com.example.object.ch11;
 
 import java.util.Hashtable;
 

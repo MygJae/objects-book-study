@@ -1,10 +1,8 @@
-package org.eternity.billing.step04;
-
-import org.eternity.money.Money;
+package com.example.object.ch11;
 
 import java.time.Duration;
 
-public class RegularPhone extends Phone {
+public abstract class RegularPhone extends Phone {
     private Money amount;
     private Duration seconds;
 
@@ -17,4 +15,6 @@ public class RegularPhone extends Phone {
     protected Money calculateCallFee(Call call) {
         return amount.times(call.getDuration().getSeconds() / seconds.getSeconds());
     }
+
+    protected abstract Money afterCalculated(Money fee);
 }

@@ -1,10 +1,10 @@
-package org.eternity.billing.step04;
+package com.example.object.ch11;
 
-import org.eternity.money.Money;
+import com.example.object.ch11.Money;
 
 import java.time.Duration;
 
-public class NightlyDiscountPhone extends Phone {
+public abstract class NightlyDiscountPhone extends Phone {
     private static final int LATE_NIGHT_HOUR = 22;
 
     private Money nightlyAmount;
@@ -25,4 +25,6 @@ public class NightlyDiscountPhone extends Phone {
             return regularAmount.times(call.getDuration().getSeconds() / seconds.getSeconds());
         }
     }
+
+    protected abstract Money afterCalculated(Money fee);
 }

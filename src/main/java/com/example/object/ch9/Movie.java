@@ -1,7 +1,7 @@
-package org.eternity.movie.step03;
+package com.example.object.ch9;
 
-import org.eternity.money.Money;
-import org.eternity.movie.step03.locator.ServiceLocator;
+import com.example.object.ch9.Money;
+import com.example.object.ch9.ServiceLocator;
 
 import java.time.Duration;
 

@@ -1,7 +1,7 @@
-package org.eternity.movie.step02.factory;
+package com.example.object.ch9;
 
-import org.eternity.money.Money;
-import org.eternity.movie.step01.Movie;
+import com.example.object.ch9.Money;
+import com.example.object.ch9.Movie;
 
 public class Client {
     private Factory factory;

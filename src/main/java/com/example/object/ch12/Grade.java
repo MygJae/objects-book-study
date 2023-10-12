@@ -1,4 +1,4 @@
-package org.eternity.lecture.step02;
+package com.example.object.ch12;
 
 public class Grade {
     private String name;

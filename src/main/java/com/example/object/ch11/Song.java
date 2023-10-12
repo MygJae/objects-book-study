@@ -1,4 +1,4 @@
-package org.eternity.playlist;
+package com.example.object.ch11;
 
 public class Song {
     private String singer;

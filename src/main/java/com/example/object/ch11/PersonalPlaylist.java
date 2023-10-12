@@ -1,4 +1,7 @@
-package org.eternity.playlist;
+package com.example.object.ch11;
+
+import com.example.object.ch11.Playlist;
+import com.example.object.ch11.Song;
 
 public class PersonalPlaylist {
     private Playlist playlist = new Playlist();

@@ -1,4 +1,4 @@
-package org.eternity.stack;
+package com.example.object.ch11;
 
 import java.util.EmptyStackException;
 import java.util.Vector;

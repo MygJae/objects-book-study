@@ -1,6 +1,6 @@
-package org.eternity.billing.step05;
+package com.example.object.ch11;
 
-import org.eternity.money.Money;
+import com.example.object.ch11.Money;
 
 public class RateDiscountablePolicy extends AdditionalRatePolicy {
     private Money discountAmount;

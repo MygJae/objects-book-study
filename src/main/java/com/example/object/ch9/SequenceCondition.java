@@ -1,7 +1,7 @@
-package org.eternity.movie.step03.pricing;
+package com.example.object.ch9;
 
-import org.eternity.movie.step03.DiscountCondition;
-import org.eternity.movie.step03.Screening;
+import com.example.object.ch9.DiscountCondition;
+import com.example.object.ch9.Screening;
 
 public class SequenceCondition implements DiscountCondition {
     private int sequence;

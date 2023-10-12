@@ -1,9 +1,9 @@
-package org.eternity.movie.step03.pricing;
+package com.example.object.ch9;
 
-import org.eternity.money.Money;
-import org.eternity.movie.step03.DiscountCondition;
-import org.eternity.movie.step03.DiscountPolicy;
-import org.eternity.movie.step03.Screening;
+import com.example.object.ch9.Money;
+import com.example.object.ch9.DiscountCondition;
+import com.example.object.ch9.DiscountPolicy;
+import com.example.object.ch9.Screening;
 
 public class AmountDiscountPolicy extends DiscountPolicy {
     private Money discountAmount;

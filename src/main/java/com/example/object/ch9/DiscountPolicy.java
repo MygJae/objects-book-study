@@ -1,6 +1,6 @@
 package com.example.object.ch9;
 
-import org.eternity.money.Money;
+import com.example.object.ch9.Money;
 
 import java.util.ArrayList;
 import java.util.Arrays;

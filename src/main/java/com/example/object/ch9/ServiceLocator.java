@@ -1,6 +1,6 @@
-package org.eternity.movie.step03.locator;
+package com.example.object.ch9;
 
-import org.eternity.movie.step03.DiscountPolicy;
+import com.example.object.ch9.DiscountPolicy;
 
 public class ServiceLocator {
     private static ServiceLocator soleInstance = new ServiceLocator();

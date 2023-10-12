@@ -1,4 +1,4 @@
-package org.eternity.movie.step03;
+package com.example.object.ch9;
 
 public interface DiscountCondition {
     boolean isSatisfiedBy(Screening screening);
