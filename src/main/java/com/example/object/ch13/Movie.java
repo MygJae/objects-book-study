@@ -1,6 +1,6 @@
 package com.example.object.ch13;
 
-import org.eternity.money.Money;
+import com.example.object.ch13.Money;
 
 import java.time.Duration;
 import java.time.LocalDateTime;

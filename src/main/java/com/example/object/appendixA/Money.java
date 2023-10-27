@@ -1,4 +1,4 @@
-package com.example.object.ch13;
+package com.example.object.appendixA;
 
 import java.math.BigDecimal;
 import java.util.Objects;

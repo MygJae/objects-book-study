@@ -1,6 +1,6 @@
-package org.eternity.billing.step02;
+package com.example.object.ch14;
 
-import org.eternity.money.Money;
+import com.example.object.ch14.Money;
 
 import java.util.ArrayList;
 import java.util.Arrays;

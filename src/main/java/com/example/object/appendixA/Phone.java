@@ -1,9 +1,6 @@
-package com.example.object.ch14;
-
-import com.example.object.ch14.Money;
+package com.example.object.appendixA;
 
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
 
 public class Phone {
@@ -18,11 +15,7 @@ public class Phone {
         calls.add(call);
     }
 
-    public List<Call> getCalls() {
-        return Collections.unmodifiableList(calls);
-    }
-
-    public Money calculateFee() {
-        return ratePolicy.calculateFee(this);
+    public Bill publishBill() {
+        return new Bill(this, ratePolicy.calculateFee(calls));
     }
 }

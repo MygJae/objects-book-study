@@ -1,6 +1,6 @@
-package org.eternity.billing.step02;
+package com.example.object.ch14;
 
-import org.eternity.money.Money;
+import com.example.object.ch14.Money;
 
 public class TaxablePolicy extends AdditionalRatePolicy {
     private double taxRatio;

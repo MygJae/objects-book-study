@@ -1,6 +1,6 @@
-package org.eternity.billing.step02;
+package com.example.object.ch14;
 
-import org.eternity.time.DateTimeInterval;
+import com.example.object.ch14.DateTimeInterval;
 
 import java.time.Duration;
 import java.util.Arrays;
